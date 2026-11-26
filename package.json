@@ -1,0 +1,18 @@
+{
+  "name": "loop-skills",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "check": "biome check . && node scripts/validate-skills.mjs",
+    "format": "biome format --write .",
+    "test": "node --test scripts/validate-skills.test.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.4",
+    "yaml": "2.9.1"
+  }
+}

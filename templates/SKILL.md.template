@@ -1,0 +1,30 @@
+---
+name: replace-with-skill-name
+description: Replace with the concrete task this skill performs and when to select it.
+---
+
+# Replace with Skill Title
+
+## Requirements
+
+List required inputs, tools, services, runtimes, and dependency setup. State credentials by environment variable name with placeholder values. Identify the Loop version and surfaces verified.
+
+## Workflow
+
+1. Inspect the user's inputs and the available tools.
+2. Collect decisions that materially affect the deliverable using the host's supported input tool.
+3. Perform the documented task using bundled scripts or available tools.
+4. Verify the output through the normal entry point.
+5. Return the deliverable using the host's supported file or result presentation.
+
+## Recovery
+
+Describe concrete failure conditions, reusable intermediate outputs, and safe retry steps.
+
+## Verification
+
+Provide a reproducible smoke check using synthetic data, expected results, and remaining limitations.
+
+## References
+
+Link to supporting files relative to this directory when they exist. Add scripts and assets when the workflow requires them.
