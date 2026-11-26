@@ -1,0 +1,22 @@
+title = "Loop Skills public data checks"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "personal-email"
+description = "Email address"
+regex = '''(?i)\b[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}\b'''
+[[rules.allowlists]]
+regexes = ['''(?i)@(?:users\.noreply\.github\.com|example\.(?:com|net|org))$''', '''(?i)^noreply@github\.com$''']
+
+[[rules]]
+id = "home-directory"
+description = "Machine-specific user directory"
+regex = '''(?i)(?:/(?:Users|home)/|[a-z]:[\\/]Users[\\/])[\p{L}\p{N}._-]+'''
+
+[[rules]]
+id = "labelled-phone-number"
+description = "Phone or mobile field containing a number"
+regex = '''(?i)(?:phone|mobile|telephone|手机(?:号)?|电话)[\s"']{0,4}[:=：][\s"']{0,4}(\+?[0-9](?:[ ()-]?[0-9]){6,14})\b'''
+secretGroup = 1
